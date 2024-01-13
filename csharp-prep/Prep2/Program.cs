@@ -30,19 +30,23 @@ class Program
         }
         else
         {
-            letter = "E";
+            letter = "F";
         }
 
         rest = grade % 10;
 
-        if (rest >= 7 && grade < 90)
+        if (grade > 60 && grade < 90)
         {
-            symbol = "+";
+            if (rest >= 7)
+            {
+                symbol = "+";
+            }
+            else if (rest <= 3)
+            {
+                symbol = "-";
+            }
         }
-        else if (rest <= 3)
-        {
-            symbol = "-";
-        }
+
 
         Console.WriteLine($"The final score is {letter}{symbol}");
 
