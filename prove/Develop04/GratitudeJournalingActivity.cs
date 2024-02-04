@@ -14,7 +14,7 @@ class GratitudeJournalingActivity : MindfulnessActivity
         Console.WriteLine("Get ready to start journaling...");
         Thread.Sleep(2000);
 
-        DateTime endTime = DateTime.Now.AddSeconds(duration);
+        DateTime endTime = DateTime.Now.AddSeconds(_duration);
         int entryCount = 0;
 
         while (DateTime.Now < endTime)

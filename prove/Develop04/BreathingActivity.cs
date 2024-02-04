@@ -10,9 +10,9 @@ class BreathingActivity : MindfulnessActivity
     protected override void PerformActivity()
     {
         Console.WriteLine("Breathe in...");
-        Thread.Sleep(duration * 500); // Pause for half of the specified duration
+        Thread.Sleep(_duration * 500); // Pause for half of the specified duration
         Console.WriteLine("Breathe out...");
-        Thread.Sleep(duration * 500); // Pause for half of the specified duration
+        Thread.Sleep(_duration * 500); // Pause for half of the specified duration
 
         base.PerformActivity();
     }

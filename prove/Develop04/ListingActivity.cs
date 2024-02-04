@@ -24,7 +24,7 @@ class ListingActivity : MindfulnessActivity
             Console.WriteLine("Get ready to list...");
             Thread.Sleep(2000);
 
-            DateTime endTime = DateTime.Now.AddSeconds(duration);
+            DateTime endTime = DateTime.Now.AddSeconds(_duration);
             int itemCount = 0;
 
             while (DateTime.Now < endTime)
